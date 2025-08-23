@@ -20,7 +20,7 @@
           <div class="col text-center"><p class="h2">Registración</p></div>
         </div>
         <div class="mb-3 d-flex flex-column justify-content-center h-100 pt-5">
-          <form>
+          <form action="login.html" method="get">
             <div class="row">
               <div class="col-6">
                 <div class="mb-3">
@@ -48,12 +48,13 @@
                     class="form-control"
                     id="contraseña"
                     minlength="6"
+                    maxlength="18"
                     required
                   />
                 </div>
 
                 <div class="mb-3">
-                  <label for="direccion" class="form-label">Dirección</label>
+                  <label for="direccion" class="form-label">Pais</label>
                   <input
                     type="text"
                     class="form-control"
@@ -62,7 +63,7 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="provincia" class="form-label">Provincia</label>
+                  <label for="provincia" class="form-label">Dirección</label>
                   <input
                     type="text"
                     class="form-control"
@@ -70,16 +71,16 @@
                     required
                   />
                 </div>
-                <div class="mb-3">
+                <div class="">
                   <label for="telefono" class="form-label">Teléfono</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="telefono"
-                    required
-                  />
+                  <input type="tel" class="form-control" id="telefono" />
                 </div>
-                <a href="login.html" class="btn btn-primary">Registrarme</a>
+                <div id="emailHelp" class="form-text">
+                  Apartado no obligatorio
+                </div>
+                <button type="submit" class="btn btn-primary my-3">
+                  Registrarme
+                </button>
               </div>
               <div class="col-6">
                 <div class="mb-3">
@@ -108,11 +109,13 @@
                     type="password"
                     class="form-control"
                     id="contraseña2"
+                    minlength="6"
+                    maxlength="18"
                     required
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="localidad" class="form-label">Localidad</label>
+                  <label for="localidad" class="form-label">Ciudad</label>
                   <input
                     type="text"
                     class="form-control"

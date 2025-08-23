@@ -21,12 +21,16 @@
         </div>
         <div class="row">
           <div class="col d-none d-md-flex col-lg-6 col-md-6">
-            <img src="/assets/imgs/login.png" class="img-fluid" alt="" />
+            <img
+              src="/assets/imgs/purajoyalogo.png"
+              class="img-fluid"
+              alt="logo de pura joya"
+            />
           </div>
           <div
             class="col col-lg-6 col-md-6 d-flex flex-column justify-content-center h-100 pt-5"
           >
-            <form>
+            <form action="404.html" method="get">
               <div class="mb-3">
                 <label for="usuario" class="form-label">Usuario:</label>
                 <input type="text" class="form-control" id="usuario" required />
@@ -40,6 +44,8 @@
                   type="password"
                   class="form-control"
                   id="password"
+                  minlength="8"
+                  maxlength="16"
                   required
                 />
                 <div class="d-flex justify-content-sta">
@@ -53,14 +59,15 @@
                   </a>
                 </div>
               </div>
-              <a href="404.html" class="btn btn-primary">Aceptar</a>
+              <button type="submit" class="btn btn-primary">Aceptar</button>
             </form>
+            <!-- Icono Google (SVG oficial) -->
             <div>
               <button
                 type="button"
                 class="btn btn-google w-100 mb-2 d-flex align-items-center justify-content-center mt-3"
+                id="liveToastBtn"
               >
-                <!-- Icono Google (SVG oficial) -->
                 <svg
                   width="20"
                   height="20"
@@ -89,12 +96,13 @@
                 >
               </button>
             </div>
+            <!-- Icono Facebook -->
             <div>
               <button
                 type="button"
                 class="btn btn-facebook w-100 d-flex align-items-center justify-content-center gap-2"
+                id="liveToastBtn"
               >
-                <!-- Icono Facebook -->
                 <svg
                   width="18"
                   height="18"
@@ -110,6 +118,34 @@
                   >Continuar con Facebook</span
                 >
               </button>
+
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div
+                  id="liveToast"
+                  class="toast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                  <div class="toast-header">
+                    <img
+                      src="/assets/imgs/purajoyalogo.png"
+                      class="rounded me-2 img-login"
+                      alt="logo"
+                    />
+                    <strong class="me-auto">Puras Joyas</strong>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="toast-body">
+                    Lamentamos, esta función no se encuentra disponible 😓
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -130,6 +166,18 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastLiveExample = document.getElementById("liveToast");
+
+      if (toastTrigger) {
+        const toastBootstrap =
+          bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+        toastTrigger.addEventListener("click", () => {
+          toastBootstrap.show();
+        });
+      }
+    </script>
     <!-- Modal: Recuperar contraseña -->
     <div
       class="modal fade"
