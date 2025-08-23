@@ -29,20 +29,29 @@
         animation: imagen-logo 1.5s ease forwards;
     }
 }
+
+
+
 /* sobre las secciones */
 .titulos-de-seccion{
-  margin: 50px 0 20px 0 ;
+  padding: 50px 0 20px 50px ;
   
 }
 
 /* aqui estara lo relacionado a las tarjetas  */
 .seccion-ofertas{ 
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin: 0 20px;
 }
 
+.fondo-1{
+    background-image:linear-gradient(#fff, #ccc );
+}
+.fondo-2{
+    background-image:linear-gradient( #ccc,#fff );
+}
 .tarjeta{
     background-color: #fff;
     width: 300px;
@@ -50,7 +59,6 @@
     border-radius:  0 10px 10px 10px;
     border: 1px solid #000;
     margin-top: 15px;
-
 }
 
 .parte-superior-tarjeta{
