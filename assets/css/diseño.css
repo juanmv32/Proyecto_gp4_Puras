@@ -55,6 +55,12 @@
   border-radius: 0 10px 10px 10px;
   border: 1px solid #000;
   margin-top: 15px;
+  transition: transform 0.5s, box-shadow 0.5s;
+ 
+}
+.tarjeta:hover{
+ transform: scale(1.01 , 1.01);
+ box-shadow: 10px 10px 5px #aaa;
 }
 
 .parte-superior-tarjeta {
