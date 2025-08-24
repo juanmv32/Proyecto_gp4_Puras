@@ -247,8 +247,8 @@
 }
 /******************************************************************/
 .producto-foto img{
-    width: 240px;
-    height: 240px;
+    width: 300px;
+    height: auto;
 }
 .producto-nombre{
     color: var(--negro);
