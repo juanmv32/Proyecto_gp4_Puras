@@ -9,11 +9,11 @@
   width: 150px;
   height: 150px;
 }
-.container {
+/* .container {
   position: relative;
   width: 100%;
   max-width: 500px;
-}
+} */
 .gato {
   display: flex;
 
