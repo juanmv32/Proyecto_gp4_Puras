@@ -29,6 +29,14 @@
   }
 }
 
+
+/* aqui se configura el carrusel */
+
+.borde-carrusel{
+  border: 1px solid #ccc;
+  margin-top: 100px;
+  display: none;
+}
 /* sobre las secciones */
 .titulos-de-seccion {
   padding: 50px 0 20px 50px;
@@ -133,6 +141,9 @@
     order: 2;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .borde-carrusel{
+    display: block;
   }
 }
 @media (min-width: 912px) {
