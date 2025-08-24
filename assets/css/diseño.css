@@ -1,0 +1,139 @@
+/* aqui se encuentra todo lo relacionado al header y logo */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.orden-2 {
+  order: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenedor-imagen-logo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 90%;
+    height: auto;
+    opacity: 0;
+    translate: 0 100px;
+    z-index: -1;
+    animation: imagen-logo 1.5s ease forwards;
+  }
+}
+
+/* sobre las secciones */
+.titulos-de-seccion {
+  padding: 50px 0 20px 50px;
+}
+
+/* aqui estara lo relacionado a las tarjetas  */
+.seccion-ofertas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+
+.fondo-1 {
+  background-image: linear-gradient(#fff, #ccc);
+}
+.fondo-2 {
+  background-image: linear-gradient(#ccc, #fff);
+}
+.tarjeta {
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  border-radius: 0 10px 10px 10px;
+  border: 1px solid #000;
+  margin-top: 15px;
+}
+
+.parte-superior-tarjeta {
+  height: 60%;
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 0 0;
+  }
+  & div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+    background-color: #f00;
+    border-radius: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+      color: #fff;
+      font-weight: bolder;
+    }
+  }
+}
+
+.parte-nombre-tarjeta {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h3 {
+    font-weight: bolder;
+  }
+}
+
+.parte-boton-tarjeta {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & button {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+/* aqui estaran las media queri que afectaran al comportamiento de la pagina */
+@keyframes imagen-logo {
+  0% {
+    opacity: 0;
+    translate: 0 100px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .orden-2 {
+    order: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 912px) {
+  .orden-2 {
+    order: 2;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .contenedor-imagen-logo img {
+    width: 50%;
+  }
+}
