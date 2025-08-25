@@ -20,14 +20,40 @@
     <main>
         <div class="container mt-3">
             <div class="row">
-                <div class="col-sm-12 col-md-5">
+                <div class="col-sm-12 col-md-6">
                     <div class="container">
-                        <div class="d-flex justify-content-center producto-foto">
-                            <img src="/assets/imgs/anillo1.jpg" alt="imagen_producto">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item producto-foto active">
+                                    <img src="/assets/imgs/anillo1.jpg" class="mx-auto d-block" alt="imagen_producto">
+                                </div>
+                                <div class="carousel-item producto-foto">
+                                    <img src="/assets/imgs/anillo1.jpg" class="mx-auto d-block" alt="imagen_producto">
+                                </div>
+                                <div class="carousel-item producto-foto">
+                                    <img src="/assets/imgs/anillo1.jpg" class="mx-auto d-block" alt="imagen_producto">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-7">
+                <div class="col-sm-12 col-md-6">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 producto-nombre">
@@ -104,7 +130,7 @@
             </div>
         </div>
         <br>
-        <div class="container">
+        <div class="container m-3">
             <div class="col-12">
                 <div class="row container producto-datos">
                     <p>Mira más de nuestros productos disponibles:</p>
