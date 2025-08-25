@@ -262,14 +262,29 @@
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
-    line-height: 30px;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--azulmarino);
+    line-height: 24px;
 }
 .producto-comprar button:active{
     background-color: var(--blanco);
     color: var(--azul);
+}
+.producto-datos{
+    width: fit-content;
+}
+.producto-datos img{
+    width: 200px;
+    height: auto;
+}
+.producto-datos p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.producto-datos h5{
+    font-family: Playfair;
+}
+.producto-datos button{
+    width: 100%;
+    font-family: Montserrat;
 }
 .comentario-titulo p{
     font-size: 24px;
@@ -294,7 +309,6 @@
     letter-spacing: 0;
     color: var(--negro);
     font-family: "Montserrat";
-
 }
 
 /******************************************************************/
@@ -307,15 +321,8 @@
     font-size: 14px;
 }
 .carrito-boton button{
-    font-weight: 500;
+    font-weight: 300;
     font-family: Montserrat;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--blanco);
-}
-.carrito-boton button:active{
-    background-color: var(--blanco);
-    color: var(--azul);
 }
 .carrito-total p{
     font-size: 15px;
@@ -325,6 +332,10 @@
     font-size: 20px;
     font-weight: 600;
 }
+.carrito-boton-compra button{
+    font-weight: 600;
+    font-family: Montserrat;
+}
 .carrito-imagen{
     width: 200px;
     height: 200px;
@@ -333,6 +344,5 @@
 .carrito-imagen img{
     width: 200px;
     height: auto;
-
 }
 /******************************************************************/
