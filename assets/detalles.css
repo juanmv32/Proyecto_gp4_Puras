@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 :root{
     --negro: rgb(0,0,0);
     --gris:#666;
@@ -22,228 +21,6 @@
 @font-face{
     font-family: "Playfair Regular";
     src: url(/assets/fonts/Playfair/static/Playfair_144pt-Regular.ttf);
-}
-/******************************************************************/
-.categoria h2{
-    font-family: Playfair;
-    font-size: 50px;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-/******************************************************************/
-.categoria-anillo{
-    width: fit-content;
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-.categoria-anillo-encuadre{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.categoria-anillo-encuadre img{
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    object-position: -50px -50px;
-}
-.categoria-anillo-encuadre-texto{
-    position: relative;
-}
-.categoria-anillo h5{
-    font-family: Playfair;
-    font-size: 24px;
-}
-.categoria-anillo button{
-    width: 100%;
-    font-size: 12px;
-    font-family: Montserrat;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--blanco);
-}
-.categoria-anillo button:hover{
-    cursor: pointer;
-    background-color: var(--blanco);
-    color: var(--azul);
-}
-.categoria-anillo button:active{
-    cursor: pointer;
-}
-.categoria-anillo a{
-    text-decoration: none;
-}
-/******************************************************************/
-.categoria-reloj{
-    width: fit-content;
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-.categoria-reloj-encuadre{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.categoria-reloj-encuadre img{
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    object-position: -50px -80px;
-}
-.categoria-reloj-encuadre-texto{
-    position: relative;
-}
-.categoria-reloj h5{
-    font-family: Playfair;
-    font-size: 24px;
-}
-.categoria-reloj button{
-    width: 100%;
-    font-size: 12px;
-    font-family: Montserrat;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--blanco);
-}
-.categoria-reloj button:hover{
-    cursor: pointer;
-    background-color: var(--blanco);
-    color: var(--azul);
-}
-.categoria-reloj button:active{
-    cursor: pointer;
-}
-.categoria-reloj a{
-    text-decoration: none;
-}
-/******************************************************************/
-.categoria-aro{
-    width: fit-content;
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-.categoria-aro-encuadre{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.categoria-aro-encuadre img{
-    width: 240px;
-    height: auto;
-    object-fit: cover;
-    object-position: -20px -20px;
-}
-.categoria-aro-encuadre-texto{
-    position: relative;
-}
-.categoria-aro h5{
-    font-family: Playfair;
-    font-size: 24px;
-}
-.categoria-aro button{
-    width: 100%;
-    font-size: 12px;
-    font-family: Montserrat;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--blanco);
-}
-.categoria-aro button:hover{
-    cursor: pointer;
-    background-color: var(--blanco);
-    color: var(--azul);
-}
-.categoria-aro button:active{
-    cursor: pointer;
-}
-.categoria-aro a{
-    text-decoration: none;
-}
-/******************************************************************/
-.categoria-dije{
-    width: fit-content;
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-.categoria-dije-encuadre{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.categoria-dije-encuadre img{
-    width: 240px;
-    height: auto;
-    object-fit: cover;
-    object-position: -20px -20px;
-}
-.categoria-dije-encuadre-texto{
-    position: relative;
-}
-.categoria-dije h5{
-    font-family: Playfair;
-    font-size: 24px;
-}
-.categoria-dije button{
-    width: 100%;
-    font-size: 12px;
-    font-family: Montserrat;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--blanco);
-}
-.categoria-dije button:hover{
-    cursor: pointer;
-    background-color: var(--blanco);
-    color: var(--azul);
-}
-.categoria-dije button:active{
-    cursor: pointer;
-}
-.categoria-dije a{
-    text-decoration: none;
-}
-/******************************************************************/
-.categoria-pulsera{
-    width: fit-content;
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-.categoria-pulsera-encuadre{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.categoria-pulsera-encuadre img{
-    width: 240px;
-    height: auto;
-    object-fit: cover;
-    object-position: -25px -25px;
-}
-.categoria-pulsera-encuadre-texto{
-    position: relative;
-}
-.categoria-pulsera h5{
-    font-family: Playfair;
-    font-size: 24px;
-}
-.categoria-pulsera button{
-    width: 100%;
-    font-size: 12px;
-    font-family: Montserrat;
-    border-color: var(--azul);
-    background-color: var(--azul);
-    color: var(--blanco);
-}
-.categoria-pulsera button:hover{
-    cursor: pointer;
-    background-color: var(--blanco);
-    color: var(--azul);
-}
-.categoria-pulsera button:active{
-    cursor: pointer;
-}
-.categoria-pulsera a{
-    text-decoration: none;
 }
 /******************************************************************/
 .producto-foto img{
@@ -286,6 +63,7 @@
     width: 100%;
     font-family: Montserrat;
 }
+/******************************************************************/
 .comentario-titulo p{
     font-size: 24px;
     font-weight: 700;
@@ -321,6 +99,7 @@
     font-size: 14px;
 }
 .carrito-boton button{
+    font-size: 12px;
     font-weight: 300;
     font-family: Montserrat;
 }
