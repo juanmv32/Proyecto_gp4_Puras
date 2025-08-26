@@ -35,6 +35,9 @@
     color: var(--negro);
     font-family: "Playfair";
 }
+.producto-rating svg{
+    color: var(--dorado);
+}
 .producto-precio p{
     color: var(--gris);
     font-size: 16px;
