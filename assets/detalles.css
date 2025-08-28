@@ -25,8 +25,8 @@
 /****************************************/
 /****************************************/
 .producto-foto img{
-    width: 350px;
-    height: auto;
+    width: auto;
+    height: 350px;
 }
 .producto-foto button{
     color: var(--gris);
@@ -90,7 +90,6 @@
     color: var(--negro);
     font-family: "Montserrat";
 }
-
 /****************************************/
 /****************************************/
 .carrito-producto p{
