@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="/assets/css/login.css" />
     <link rel="stylesheet" href="/assets/css/diseño.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
     <title>💎Registración💎</title>
   </head>
@@ -46,7 +47,7 @@
                   height="16"
                   fill="currentColor"
                   class="bi bi-cart"
-                  viewBox="0 0 16 16"
+                  view="0 0 16 16"
                 >
                   <path
                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
@@ -113,7 +114,7 @@
                   height="16"
                   fill="currentColor"
                   class="bi bi-search"
-                  viewBox="0 0 16 16"
+                  view="0 0 16 16"
                 >
                   <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
@@ -130,128 +131,244 @@
         <div class="row py-4">
           <div class="col text-center"><p class="h2">Registración</p></div>
         </div>
-        <div class="mb-3 d-flex flex-column justify-content-center h-100 pt-5">
+        <div class="py-4">
           <form action="login.html" method="get">
-            <div class="row">
-              <div class="col-6">
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="nombre"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="contraseña" class="form-label">Contraseña<span class="text-danger">*</span></label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="contraseña"
-                    minlength="6"
-                    maxlength="18"
-                    required
-                  />
-                </div>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ' -]{2,40}$"
+                  title="Solo letras, espacios, guiones o apóstrofos (2–40 caracteres)."
+                  autocomplete="given-name"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="apellido" class="form-label"
+                  >Apellido <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  required
+                  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ' -]{2,40}$"
+                  title="Solo letras, espacios, guiones o apóstrofos (2–40 caracteres)."
+                  autocomplete="family-name"
+                  name="apellido"
+                />
+              </div>
 
-                <div class="mb-3">
-                  <label for="direccion" class="form-label">Pais<span class="text-danger">*</span></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="direccion"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="provincia" class="form-label">Dirección<span class="text-danger">*</span></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="provincia"
-                    required
-                  />
-                </div>
-                <div class="">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" />
-                </div>
-                <div id="emailHelp" class="form-text">
-                  Apartado no obligatorio
-                </div>
-                <button type="submit" class="btn btn-primary my-3">
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label"
+                  >Email <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                  name="email"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email2" class="form-label"
+                  >Reingrese Email <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email2"
+                  required
+                  name="email2"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="contraseña" class="form-label"
+                  >Contraseña <span class="text-danger">*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contraseña"
+                  minlength="6"
+                  maxlength="18"
+                  required
+                  name="contraseña"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="contraseña2" class="form-label"
+                  >Reingrese Contraseña
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="contraseña2"
+                  minlength="6"
+                  maxlength="18"
+                  required
+                  name="contraseña2"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="direccion" class="form-label"
+                  >País <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="direccion"
+                  required
+                  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ' -]{2,40}$"
+                  title="Solo letras, espacios, guiones o apóstrofos (2–40 caracteres)."
+                  name="pais"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="localidad" class="form-label"
+                  >Ciudad <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="localidad"
+                  required
+                  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ' -]{2,40}$"
+                  title="Solo letras, espacios, guiones o apóstrofos (2–40 caracteres)."
+                  name="ciudad"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="provincia" class="form-label"
+                  >Dirección <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="provincia"
+                  required
+                  pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ' -]{2,40}$"
+                  title="Solo letras, espacios, guiones o apóstrofos (2–40 caracteres)."
+                  name="direccion"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="codigopostal" class="form-label"
+                  >Código Postal <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="codigopostal"
+                  required
+                  pattern="^\d{4,8}$"
+                  inputmode="numeric"
+                  name="codigopostal"
+                  title="Solo numeros"
+                />
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  pattern="^\d{4,15}$"
+                  required
+                  inputmode="tel"
+                  name="telefono"
+                />
+              </div>
+              <div class="col-12 col-md-6 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">
                   Registrarme
                 </button>
-              </div>
-              <div class="col-6">
-                <div class="mb-3">
-                  <label for="apellido" class="form-label">Apellido<span class="text-danger">*</span></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="apellido"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email2" class="form-label">Reingrese Email<span class="text-danger">*</span></label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email2"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="contraseña2" class="form-label"
-                    >Reingrese Contraseña<span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="contraseña2"
-                    minlength="6"
-                    maxlength="18"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="localidad" class="form-label">Ciudad<span class="text-danger">*</span></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="localidad"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="codigopostal" class="form-label"
-                    >Codigo Postal<span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="codigopostal"
-                    required
-                  />
-                </div>
               </div>
             </div>
           </form>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="container-fluid footer">
+      <section class="pie">
+        <div class="row gx-0 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <img src="/assets/imgs/purajoyalogo.png" class="logo" alt="logo" />
+            <br />
+            <p>
+              <b>Pura Joyas Tucumán </b><br />
+              Diseños exclusivos <br />
+              a tu medida <br />de alta calidad
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-4">
+            <h4>Nuestras redes</h4>
+
+            <a
+              href="https://www.facebook.com/TucumanPuraJoyas/"
+              target="_blank"
+            >
+              <img
+                src="/assets/imgs/Fb logo.png"
+                class="img-fluid d-block mx-auto"
+                alt="facebook"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/pura_joyas_tucuman/?hl=en"
+              target="_blank"
+            >
+              <img
+                src="/assets/imgs/Instagram logo.png"
+                class="img-fluid d-block mx-auto mt-3"
+                alt="instagram"
+              />
+            </a>
+
+            <a href="/assets/pages/gato2.html">
+              <img
+                src="/assets/imgs/Wsp.png"
+                class="img-fluid d-block mx-auto mt-3"
+                alt="whatsapp"
+              />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-4">
+            <h4>Visitanos</h4>
+            📍 Gral. Paz 576 <br />
+
+            🕖 Lunes a Viernes de 8:00 a 18:00 hs. <br />
+
+            🅿 Estacionamiento para clientes <br />
+
+            <a href="/assets/pages/contacto.html">Contacto</a> <br />
+
+            <section class="mapa">
+              <a href="/assets/pages/mapa.html">Ubicación</a>
+            </section>
+          </div>
+        </div>
+        <div>
+          <hr style="border: 2px solid black; width: 80%; margin: 0 auto" />
+          <p class="col text-center">
+            2025, Pura Joyas Tucumán&#174; <br />
+            Desarrollado por Grupo 4, RollingCode
+          </p>
+        </div>
+      </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
