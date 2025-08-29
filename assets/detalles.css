@@ -92,6 +92,16 @@
 }
 /****************************************/
 /****************************************/
+.carrito-imagen-celulares{
+    width: 250px;
+    height: 120px;
+    overflow: hidden;
+}
+.carrito-imagen-celulares img{
+    width: 200px;
+    height: auto;
+    object-position: -20px -20px;
+}
 .carrito-producto p{
     font-weight: 600;
     font-size: 16px;
@@ -105,7 +115,17 @@
     font-weight: 300;
     font-family: Montserrat;
 }
+.carrito-imagen{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.carrito-imagen img{
+    width: 200px;
+    height: auto;
+}
 .carrito-total p{
+    font-family: Montserrat;
     font-size: 15px;
     font-weight: 400;
 }
@@ -116,15 +136,6 @@
 .carrito-boton-compra button{
     font-weight: 600;
     font-family: Montserrat;
-}
-.carrito-imagen{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.carrito-imagen img{
-    width: 200px;
-    height: auto;
 }
 /****************************************/
 /****************************************/
