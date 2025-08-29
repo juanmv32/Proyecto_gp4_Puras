@@ -9,10 +9,9 @@
   width: 150px;
   height: 150px;
 }
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
+.footer {
+  padding: 0;
+  margin: 0;
 }
 .gato {
   display: flex;
