@@ -1,8 +1,8 @@
 .error {
   display: flex;
-  flex-direction: column; /* primero imagen, luego texto */
-  align-items: center; /* centra horizontalmente */
-  justify-content: center; /* centra verticalmente si hay altura fija */
+  flex-direction: column;   /* primero imagen, luego texto */
+  align-items: center;      /* centra horizontalmente */
+  justify-content: center;  /* centra verticalmente si hay altura fija */
   text-align: center;
 }
 
@@ -10,25 +10,26 @@
   position: absolute;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%); /* centra texto */
+  transform: translate(-50%, -50%);  /* centra texto */
   color: white;
   font-size: 1.5rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* mejora contraste */
+  background: rgba(0,0,0,0.5);  /* mejora contraste */
   padding: 10px;
   border-radius: 8px;
   width: 50%; /* margen lateral */
 }
 
 .ups a {
-  color: yellow;
+  color: yellow; 
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
+  
 }
-.gato {
-  height: 100%;
+.gato{
+    height: 100%;
 }
-span {
-  color: cyan;
+.error404{
+    color: cyan;
 }
