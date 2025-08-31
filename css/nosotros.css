@@ -1,0 +1,169 @@
+
+/* Cartas en cascada */
+.cascada{
+    position: relative;
+    margin-top: 50px;
+    }
+   
+.card{
+    display: flex;
+    flex-direction: column; /* Imagen+nombre arriba, texto abajo */
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    position: static; /* sticky se aplica después */
+}
+.card img{
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    box-shadow: 0 5px 20px blue;
+}
+
+/* Acerca de nosotros-Animacion */
+.integrantes{                    
+    color: white;
+    border: 2px solid black; 
+    display: inline-block;
+    text-align: center;
+    padding: 15px;  
+    background-color: black;
+    border-radius: 10px;    
+    position: relative;
+}        
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.integrantes::after, .integrantes::before{
+    
+    content: "";
+    position: absolute;
+    top: -8px;    /* sobresale arriba */
+    left: -8px;   /* sobresale a la izquierda */
+    right: -8px;  /* sobresale a la derecha */
+    bottom: -8px; /* sobresale abajo */
+    background-image: conic-gradient(from var(--angle), transparent 50%, blue, cyan);
+    z-index: -1;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+.integrantes::before{
+    filter: blur(1.5rem);
+    opacity: 0.7;
+}
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+
+/* imagenes de integrantes */
+
+/* ===== MOBILE FIRST ===== */
+.card {
+    display: flex;
+    flex-direction: column; /* Imagen+nombre arriba, texto abajo */
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    position: static; /* sticky se aplica después */
+}
+
+.img-nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Circulo con imagen */
+.card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px blue;
+    margin-left: 0;
+    &:hover{
+        box-shadow: 0 5px 40px dodgerblue;
+    }
+}
+
+/* Descripcion */
+.texto-derecha {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ===== PARA PANTALLAS GRANDES ===== */
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row; /* imagen+nombre a la izquierda, texto a la derecha */
+        align-items: center;
+        gap: 20px;
+        position: sticky;
+        top: 30px;
+    }
+
+    .texto-derecha {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 200px;
+        width: 200px;
+        margin-left: 10px;
+    }
+}
+
+/* boton wsp */
+/* .callme{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+}
+
+.callme:hover{
+    background: darkorange;
+    border-radius: 40px 40px 40px 0;
+} */
+
+/* Presentacion de los integrantes */
+.nombres{
+font-size: 25px;
+}
+
+/* Imagen de gracias - Diferentes tamaños */
+.gracias {
+    width: 100%; /* móvil */
+  }
+  @media (min-width: 768px) { /* pantallas medianas */
+    .gracias {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1200px) { /* pantallas grandes */
+    .gracias {
+      width: 60%;
+    }
+  }
+
+  /* Estilos del footer */
+  .pie{
+  background-color: aliceblue;
+  border: solid 2px black;  
+}
+  .logo{
+  width: 150px;
+  height: 150px;
+}
