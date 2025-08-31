@@ -9,24 +9,141 @@
     <meta name="robots" content="index, follow">
     <title>Pura Joyas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <link rel="stylesheet" href="/css/gato2.css">
-    <link rel="stylesheet" href="/css/nosotros.css">
+    <link rel="stylesheet" href="/assets/css/nosotros.css">
+    <link rel="stylesheet" href="/assets/css/diseño.css">
   </head>
 
   <body>
-    <header>      
+    <header class="container-fluid header">
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid d-flex">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="orden-2">
+            <a href="/assets/pages/login.html"
+              ><button type="button" class="btn btn-outline-secondary">
+                Entrar
+              </button></a
+            >
+            <a href="#"
+              ><button
+                type="button"
+                class="btn btn-outline-secondary position-relative"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button></a
+            >
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#Nuestras-ofertas"
+                      >Nuestras ofertas</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#Aros">Aros</a></li>
+                  <li><a class="dropdown-item" href="#Anillos">Anillos</a></li>
+                  <li><a class="dropdown-item" href="#Dijes">Dijes</a></li>
+                  <li><a class="dropdown-item" href="#Cadenas">Cadenas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Pulseras">Pulseras</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Conjuntos">Conjuntos</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Relojes">Relojes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/assets/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/assets/pages/nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar producto..."
+                aria-label="Search"
+                required
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <main >   
         <!-- Acerca de nosotros -->
-        <div class="d-flex justify-content-center mt-4">
+  <div class="container-fluid ">
+  <div class="d-flex justify-content-center" style="margin-top: 100px;">
   <div class="integrantes text-center">
     <h1 class="card-title h1">Acerca de nosotros</h1>
     <p class="card-text">Integrantes del grupo.</p>    
   </div>
 </div>
+         </div>
+
            <!-- presentaciones -->
 <section class="container"> 
     <div class="cascada">
@@ -53,7 +170,7 @@
     
 <div class="col card mt-4">
    <div class="img-nombre">
-    <img src="/assets/anillo4.jpg" alt="pablo">
+    <img src="/assets/imgs/pablo.jpg" alt="pablo">
     <span class="nombres">Pablo Padilla</span>
    </div> 
    <div class="texto-derecha">
@@ -73,11 +190,11 @@
 
 <div class="col card mt-4">
   <div class="img-nombre">
-    <img src="/assets/anillo7.jpg" alt="juan">
+    <img src="/assets/imgs/juan.jpg" alt="juan">
     <span class="nombres">Juan Vargas</span>
   </div>  
   <div class="texto-derecha">
-        ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd ddddddd 
+  Hola soy Juan Varga, programador Junior de RollingCode. Me gustaria seguir aprendiendo sobre desarrollo de aplicaciones.
     </div>
 </div>        
             </div>
