@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --negro: rgb(0,0,0);
+    --gris:#666;
+    --azul:#0447A7;
+    --dorado:#c9a227;
+    --azulmarino:#DCFEFF;
+    --blanco:#ffffff;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(/assets/fonts/Playfair/Playfair-VariableFont_opsz\,wdth\,wght.ttf);
+}
+@font-face{
+    font-family: "Playfair Regular";
+    src: url(/assets/fonts/Playfair/static/Playfair_144pt-Regular.ttf);
+}
+/****************************************/
+/****************************************/
+.producto-foto img{
+    width: auto;
+    height: 350px;
+}
+.producto-foto button{
+    color: var(--gris);
+}
+.producto-nombre{
+    color: var(--negro);
+    font-family: "Playfair";
+}
+.producto-rating svg{
+    color: var(--dorado);
+}
+.producto-precio p{
+    color: var(--gris);
+    font-size: 16px;
+}
+.producto-comprar button{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.producto-datos{
+    width: fit-content;
+}
+.producto-datos img{
+    width: 200px;
+    height: 200px;
+}
+.producto-datos p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.producto-datos h5{
+    font-family: Playfair;
+}
+.producto-datos button{
+    width: 100%;
+    font-family: Montserrat;
+}
+.comentario-titulo p{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+.comentario h5{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+    color: var(--negro);
+    text-align: left;
+    margin-bottom: 0px;
+    font-family: "Playfair Regular";
+}
+.comentario p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: var(--negro);
+    font-family: "Montserrat";
+}
+/****************************************/
+/****************************************/
+.carrito-imagen-celulares{
+    width: 250px;
+    height: 120px;
+    overflow: hidden;
+}
+.carrito-imagen-celulares img{
+    width: 200px;
+    height: auto;
+    object-position: -20px -20px;
+}
+.carrito-producto p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.carrito-producto span{
+    font-weight: 500;
+    font-size: 14px;
+}
+.carrito-boton button{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: Montserrat;
+}
+.carrito-imagen{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.carrito-imagen img{
+    width: 200px;
+    height: auto;
+}
+.carrito-total p{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+}
+.carrito-total h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.carrito-boton-compra button{
+    font-weight: 600;
+    font-family: Montserrat;
+}
+/****************************************/
+/****************************************/

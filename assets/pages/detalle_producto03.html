@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="NOINDEX,NOFOLLOW" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/detalles.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/diseño.css" />
+    <title>Pura joyas</title>
+  </head>
+
+  <body>
+    <header class="container-fluid header">
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid d-flex">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="orden-2">
+            <a href="/assets/pages/login.html"
+              ><button type="button" class="btn btn-outline-secondary">
+                Entrar
+              </button></a
+            >
+            <a href="/assets/pages/carrito.html"
+              ><button
+                type="button"
+                class="btn btn-outline-secondary position-relative"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button></a
+            >
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/index.html"
+                      >Nuestras ofertas</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/index.html">Aros</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">Anillos</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/index.html">Dijes</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">Cadenas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">Pulseras</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">Conjuntos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">Relojes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/assets/pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/assets/pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar producto..."
+                aria-label="Search"
+                required
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--********** Presentación de producto **********-->
+      <div class="container mt-3 mb-3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 producto-foto">
+            <!--********** Carrusel de imágenes del producto **********-->
+            <section class="container">
+              <section
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <section class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </section>
+                <section class="carousel-inner container">
+                  <div class="carousel-item producto-foto active">
+                    <img
+                      src="/assets/imgs/producto7.jpg"
+                      class="mx-auto d-block"
+                      alt="imagen_producto"
+                    />
+                  </div>
+                  <div class="carousel-item producto-foto">
+                    <img
+                      src="/assets/imgs/producto8.jpg"
+                      class="mx-auto d-block"
+                      alt="imagen_producto"
+                    />
+                  </div>
+                  <div class="carousel-item producto-foto">
+                    <img
+                      src="/assets/imgs/producto9.jpg"
+                      class="mx-auto d-block"
+                      alt="imagen_producto"
+                    />
+                  </div>
+                </section>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon text-bg-secondary"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon text-bg-secondary"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </section>
+            </section>
+          </div>
+          <!--********** información de producto **********-->
+          <div class="col-sm-12 col-md-6">
+            <section class="container">
+              <section class="row">
+                <section class="col-12 producto-nombre">
+                  <!--********** Nombre del producto **********-->
+                  <h3>Gargantilla con cristales de fabricación Austríaca</h3>
+                </section>
+              </section>
+              <section class="row">
+                <section class="col-12 producto-rating">
+                  <!--********** Rating del producto **********-->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                </section>
+              </section>
+              <section class="row">
+                <section class="col-12 producto-precio mt-3">
+                  <!--********** Precios del producto **********-->
+                  <b>
+                    <span>Descripción</span>
+                  </b>
+                  <p>
+                    Collar de Plata 925 - Con corazones de cristal Swarovski
+                    <br />
+                    Largo 45cm.
+                  </p>
+                  <b>
+                    <span>Precio</span>
+                  </b>
+                  <p>$43.000</p>
+                  <b>
+                    <span>Precio oferta</span>
+                  </b>
+                  <p>$34.400</p>
+                </section>
+                <section class="col-12 producto-comprar">
+                  <!--********** Botón de compra **********-->
+                  <a
+                    href="/assets/pages/carrito.html"
+                    class="text-decoration-none"
+                  >
+                    <button class="btn btn-secondary">
+                      Añadir
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart-plus"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"
+                        />
+                        <path
+                          d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </section>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!--********** Sugerencia de productos **********-->
+      <div class="container mt-3 mb-3">
+        <div class="row">
+          <div class="col-12">
+            <!--********** Titulo de sugerencia de productos **********-->
+            <section class="container producto-datos float-start">
+              <p class="ps-md-5">Mira más de nuestros productos disponibles:</p>
+            </section>
+          </div>
+          <div class="col-12">
+            <section
+              class="d-flex flex-wrap justify-content-evenly align-items-center gap-3"
+            >
+              <!--********** Tarjeta de sugerencia de productos **********-->
+              <article
+                class="container producto-datos border border-secondary-subtle"
+              >
+                <div class="container">
+                  <img src="/assets/imgs/anillo1.jpg" alt="imagen_producto" />
+                </div>
+                <div class="container d-flex flex-column mb-2">
+                  <h5>Anillo</h5>
+                  <a href=""
+                    ><button class="btn btn-secondary btn-sm">
+                      Ver más
+                    </button></a
+                  >
+                </div>
+              </article>
+              <!--********** Tarjeta de sugerencia de productos **********-->
+              <article
+                class="container producto-datos border border-secondary-subtle"
+              >
+                <div class="container">
+                  <img src="/assets/imgs/anillo2.jpg" alt="imagen_producto" />
+                </div>
+                <div class="container d-flex flex-column mb-2">
+                  <h5>Anillo</h5>
+                  <a href=""
+                    ><button class="btn btn-secondary btn-sm">
+                      Ver más
+                    </button></a
+                  >
+                </div>
+              </article>
+              <!--********** Tarjeta de sugerencia de productos **********-->
+              <article
+                class="container producto-datos border border-secondary-subtle"
+              >
+                <div class="container">
+                  <img src="/assets/imgs/anillo3.jpg" alt="imagen_producto" />
+                </div>
+                <div class="container d-flex flex-column mb-2">
+                  <h5>Anillo</h5>
+                  <a href=""
+                    ><button class="btn btn-secondary btn-sm">
+                      Ver más
+                    </button></a
+                  >
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!--********** COMENTARIOS **********-->
+      <div class="container mt-3 mb-3">
+        <div class="row">
+          <div class="col-12">
+            <section class="row">
+              <section class="comentario-titulo">
+                <p>Comentarios de nuestros clientes</p>
+              </section>
+            </section>
+            <!--********** COMENTARIOS **********-->
+            <section class="row">
+              <section class="col-12">
+                <div class="comentario d-flex flex-column align-items-start">
+                  <h5>PABLO PEREZ</h5>
+                  <p>
+                    Excelente atención y seriedad. Muy profesionales. Agradezco
+                    mucho la predisposición que ofrecieron y la atención que han
+                    tenido incluso después de la compra.
+                  </p>
+                </div>
+                <div class="comentario d-flex flex-column align-items-start">
+                  <h5>MARIO VARGAS LLOSA</h5>
+                  <p>
+                    Muy buen servicio, muy atentos. Producto acorde a lo
+                    publicado. Entrega en tiempo y forma.
+                  </p>
+                </div>
+                <div class="comentario d-flex flex-column align-items-start">
+                  <h5>MARIA ANTONIETA SULLER</h5>
+                  <p>
+                    Excelente servicio en todos los aspectos! Mucha
+                    predisposición, excelente todo!
+                  </p>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--********** FOOTER **********-->
+    <footer class="container-fluid">
+      <section class="pie">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-6 col-lg-3 box text-center">
+            <img src="/assets/imgs/purajoyalogo.png" class="logo" alt="logo" />
+            <br />
+            <p>
+              <b>Pura Joyas Tucumán </b><br />
+              Diseños exclusivos <br />
+              a tu medida <br />de alta calidad
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 box text-center mt-4">
+            <h4>Nuestras redes</h4>
+
+            <a
+              href="https://www.facebook.com/TucumanPuraJoyas/"
+              target="_blank"
+            >
+              <img
+                src="/assets/imgs/Fb logo.png"
+                class="img-fluid d-block mx-auto"
+                alt="facebook"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/pura_joyas_tucuman/?hl=en"
+              target="_blank"
+            >
+              <img
+                src="/assets/imgs/Instagram logo.png"
+                class="img-fluid d-block mx-auto mt-3"
+                alt="instagram"
+              />
+            </a>
+
+            <a href="/assets/pages/gato2.html">
+              <img
+                src="/assets/imgs/Wsp.png"
+                class="img-fluid d-block mx-auto mt-3"
+                alt="whatsapp"
+              />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 box text-center mt-4">
+            <h4>Visitanos</h4>
+            📍 General Paz 576 <br />
+
+            🕖 Lunes a Viernes de 8:00 a 18:00 hs. <br />
+
+            🅿 Estacionamiento para clientes <br />
+
+            <section class="mapa">
+              <a href="/assets/pages/mapa.html">Ubicación</a>
+            </section>
+
+            <a href="/assets/pages/nosotros.html">Quienes somos</a>
+          </div>
+        </div>
+        <div>
+          <hr style="border: 2px solid black; width: 80%; margin: 0 auto" />
+          <p class="col text-center">
+            2025, Pura Joyas Tucumán&#174; <br />
+            Desarrollado por Grupo 4, RollingCode
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
