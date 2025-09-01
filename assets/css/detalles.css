@@ -94,10 +94,14 @@
 /****************************************/
 .contenedor-carrito{
     position: relative;
-    top: 50px;
+    top: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .carrito-imagen-celulares{
-    width: 250px;
+    width: 150px;
     height: 120px;
     overflow: hidden;
 }
@@ -105,6 +109,9 @@
     width: 200px;
     height: auto;
     object-position: -20px -20px;
+}
+.carrito-producto{
+    width: fit-content;
 }
 .carrito-producto p{
     font-weight: 600;
