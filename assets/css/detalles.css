@@ -92,6 +92,10 @@
 }
 /****************************************/
 /****************************************/
+.contenedor-carrito{
+    position: relative;
+    top: 50px;
+}
 .carrito-imagen-celulares{
     width: 250px;
     height: 120px;
