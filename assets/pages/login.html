@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/login.css" />
+    <link rel="stylesheet" href="/assets/css/diseño.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>💎Inicio de Sesión💎</title>
+  </head>
+  <body>
+    <header class="container-fluid header bg-body-secondary">
+      <nav class="navbar navbar-expand-md bg-white">
+        <div class="container-fluid d-flex">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="orden-2">
+            <a href="#"
+              ><button type="button" class="btn btn-outline-secondary">
+                Entrar
+              </button></a
+            >
+            <a href="#"
+              ><button
+                type="button"
+                class="btn btn-outline-secondary position-relative"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button></a
+            >
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Aros</a></li>
+                  <li><a class="dropdown-item" href="#">Anillos</a></li>
+                  <li><a class="dropdown-item" href="#">Dijes</a></li>
+                  <li><a class="dropdown-item" href="#">Cadenas</a></li>
+                  <li><a class="dropdown-item" href="#">Pulseras</a></li>
+                  <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                  <li><a class="dropdown-item" href="#">Relojes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar producto..."
+                aria-label="Search"
+                required
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-body-secondary">
+      <section class="container sombra bg-white mt-5">
+        <div class="row py-4">
+          <div class="col text-center"><p class="h2">Inicio de Sesión</p></div>
+        </div>
+        <div class="row">
+          <div class="col d-none d-md-flex col-lg-6 col-md-6">
+            <img
+              src="/assets/imgs/purajoyalogo.png"
+              class="img-fluid"
+              alt="logo de pura joya"
+            />
+          </div>
+          <div
+            class="col col-lg-6 col-md-6 d-flex flex-column justify-content-center h-100 pt-5"
+          >
+            <form action="/assets/pages/gato2.html" method="get">
+              <div class="mb-3">
+                <label for="usuario" class="form-label">Correo:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usuario"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  Ingrese su correo electronico
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  minlength="8"
+                  maxlength="16"
+                  name="contraseña"
+                  required
+                  pattern="^\S{8,16}$"
+                  title="8–16 caracteres, sin espacios."
+                />
+                <div class="d-flex justify-content-start">
+                  <a
+                    href=""
+                    class="small text-decoration-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#forgotModal"
+                  >
+                    ¿Olvidaste tu contraseña?
+                  </a>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Aceptar</button>
+            </form>
+            <!-- Icono Google (SVG oficial) -->
+            <div>
+              <button
+                type="button"
+                class="btn btn-google w-100 mb-2 d-flex align-items-center justify-content-center mt-3"
+                id="btnGoogle"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 48 48"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="#FFC107"
+                    d="M43.6 20.5H42v-.1H24v7.2h11.3C33.7 31 29.3 34 24 34c-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 2.9l5.1-5.1C33.3 5.3 28.9 3.5 24 3.5 12.7 3.5 3.5 12.7 3.5 24S12.7 44.5 24 44.5 44.5 35.3 44.5 24c0-1.2-.1-2.3-.4-3.5z"
+                  />
+                  <path
+                    fill="#FF3D00"
+                    d="M6.3 14.7l5.9 4.3C13.9 15.6 18.6 12 24 12c3 0 5.8 1.1 7.9 2.9l5.1-5.1C33.3 5.3 28.9 3.5 24 3.5 16.1 3.5 9.3 7.9 6.3 14.7z"
+                  />
+                  <path
+                    fill="#4CAF50"
+                    d="M24 44.5c5.2 0 9.9-1.9 13.5-5.1l-5.8-4.8C29.6 36.3 26.9 37.5 24 37.5c-5.3 0-9.7-3.6-11.3-8.4l-6 4.6C9.6 40.1 16.2 44.5 24 44.5z"
+                  />
+                  <path
+                    fill="#1976D2"
+                    d="M43.6 20.5H42v-.1H24v7.2h11.3c-1.1 3.3-3.5 5.9-6.5 7.3l5.8 4.8c3.4-3.1 5.4-7.8 5.4-13.7 0-1.2-.1-2.3-.4-3.5z"
+                  />
+                </svg>
+                <span class="fw-semibold text-uppercase small"
+                  >Continuar con Google</span
+                >
+              </button>
+            </div>
+            <!-- Icono Facebook -->
+            <div>
+              <button
+                type="button"
+                class="btn btn-facebook w-100 d-flex align-items-center justify-content-center gap-2"
+                id="btnFacebook"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5.02 3.66 9.19 8.44 9.93v-7.02H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.91h-2.33V22c4.78-.74 8.44-4.91 8.44-9.93z"
+                  />
+                </svg>
+                <span class="fw-semibold text-uppercase small"
+                  >Continuar con Facebook</span
+                >
+              </button>
+
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <!-- Toast de Facebook -->
+                <div
+                  id="toastFacebook"
+                  class="toast"
+                  role="alert"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  data-bs-autohide="true"
+                  data-bs-delay="2500"
+                >
+                  <div class="toast-header">
+                    <img
+                      src="/assets/imgs/purajoyalogo.png"
+                      class="rounded me-2 img-login"
+                      alt="logo"
+                    />
+                    <strong class="me-auto">Pura Joyas</strong>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                      aria-label="Cerrar"
+                    ></button>
+                  </div>
+                  <div class="toast-body">
+                    Inicio con Facebook no disponible 😓
+                  </div>
+                </div>
+
+                <!-- Toast de Google -->
+                <div
+                  id="toastGoogle"
+                  class="toast"
+                  role="alert"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  data-bs-autohide="true"
+                  data-bs-delay="2500"
+                >
+                  <div class="toast-header">
+                    <img
+                      src="/assets/imgs/purajoyalogo.png"
+                      class="rounded me-2 img-login"
+                      alt="logo"
+                    />
+                    <strong class="me-auto">Pura Joyas</strong>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                      aria-label="Cerrar"
+                    ></button>
+                  </div>
+                  <div class="toast-body">
+                    Inicio con Google no disponible 😓
+                  </div>
+                </div>
+                <!-- Toast de Recuperar contraseña -->
+                <div
+                  id="toastRecuperar"
+                  class="toast text-bg-success border-0"
+                  role="alert"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  data-bs-autohide="true"
+                  data-bs-delay="3000"
+                >
+                  <div class="toast-header">
+                    <img
+                      src="/assets/imgs/purajoyalogo.png"
+                      class="rounded me-2 img-login"
+                      alt="logo"
+                    />
+                    <strong class="me-auto">Pura Joyas</strong>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="toast"
+                      aria-label="Cerrar"
+                    ></button>
+                  </div>
+                  <div class="toast-body">Se envió el enlace a tu correo.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container my-4">
+          <div class="text-center">
+            <p class="h2">¿No tienés una cuenta?</p>
+            <a href="registro.html" class="btn btn-secondary">Crear Cuenta</a>
+          </div>
+        </div>
+        <div class="row">
+          <div></div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid footer">
+      <section class="pie">
+        <div class="row gx-0 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-3 text-center">
+            <img src="/assets/imgs/purajoyalogo.png" class="logo" alt="logo" />
+            <br />
+            <p>
+              <b>Pura Joyas Tucumán </b><br />
+              Diseños exclusivos <br />
+              a tu medida <br />de alta calidad
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-4">
+            <h4>Nuestras redes</h4>
+
+            <a
+              href="https://www.facebook.com/TucumanPuraJoyas/"
+              target="_blank"
+            >
+              <img
+                src="/assets/imgs/Fb logo.png"
+                class="img-fluid d-block mx-auto"
+                alt="facebook"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/pura_joyas_tucuman/?hl=en"
+              target="_blank"
+            >
+              <img
+                src="/assets/imgs/Instagram logo.png"
+                class="img-fluid d-block mx-auto mt-3"
+                alt="instagram"
+              />
+            </a>
+
+            <a href="/assets/pages/gato2.html">
+              <img
+                src="/assets/imgs/Wsp.png"
+                class="img-fluid d-block mx-auto mt-3"
+                alt="whatsapp"
+              />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-4">
+            <h4>Visitanos</h4>
+            📍 Gral. Paz 576 <br />
+
+            🕖 Lunes a Viernes de 8:00 a 18:00 hs. <br />
+
+            🅿 Estacionamiento para clientes <br />
+
+            <a href="/assets/pages/contacto.html">Contacto</a> <br />
+
+            <section class="mapa">
+              <a href="/assets/pages/mapa.html">Ubicación</a>
+            </section>
+          </div>
+        </div>
+        <div>
+          <hr style="border: 2px solid black; width: 80%; margin: 0 auto" />
+          <p class="col text-center">
+            2025, Pura Joyas Tucumán&#174; <br />
+            Desarrollado por Grupo 4, RollingCode
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Instancias de cada toast
+      const fbToast = bootstrap.Toast.getOrCreateInstance(
+        document.getElementById("toastFacebook")
+      );
+      const goToast = bootstrap.Toast.getOrCreateInstance(
+        document.getElementById("toastGoogle")
+      );
+
+      // Botones
+      document.getElementById("btnFacebook")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        fbToast.show();
+      });
+
+      document.getElementById("btnGoogle")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        goToast.show();
+      });
+    </script>
+
+    <!-- Modal: Recuperar contraseña -->
+    <div
+      class="modal fade"
+      id="forgotModal"
+      tabindex="-1"
+      aria-labelledby="forgotModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <form id="forgotForm">
+            <div class="modal-header">
+              <h5 class="modal-title" id="forgotModalLabel">
+                Recuperar contraseña
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <label for="forgotEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="forgotEmail"
+                placeholder="tu@correo.com"
+                required
+              />
+              <div class="form-text">
+                Te enviaremos un enlace para restablecerla.
+              </div>
+              <div class="invalid-feedback">Ingresá un email válido.</div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
