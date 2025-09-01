@@ -2,34 +2,27 @@
     background-color: bisque;
 } */
 
-
-
-.pie{
+.pie {
   background-color: aliceblue;
   border: solid 2px black;
-  
 }
-.logo{
+.logo {
   width: 150px;
   height: 150px;
 }
-.container{
-  position: relative;
-  width: 100%;
-  max-width: 500px;  
-}
+
 .gato {
   display: flex;
-  
-  width: 100vh;  
-  height: 100vh;    
+
+  width: 100vh;
+  height: 100vh;
   object-position: center;
 }
 .error {
   display: flex;
-  flex-direction: column;   
-  align-items: center;      
-  justify-content: center;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -37,18 +30,18 @@
   position: absolute;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 1rem;
   text-align: center;
-  background: rgba(0,0,0,0.5);  /* mejora contraste */
+  background: rgba(0, 0, 0, 0.5); /* mejora contraste */
   padding: 10px;
   border-radius: 8px;
-  width: 90%; 
- }
+  width: 90%;
+}
 
 .ups a {
-  color: yellow; 
+  color: yellow;
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
@@ -60,65 +53,65 @@
     width: 80%;
   }
 }
-.forma{
-    padding: 50px 10px 0 10px;
-    font-size: 20px;
-    text-align: center;
-    color: rgb(69, 69, 230);
-    font-weight: bold;
+.forma {
+  padding: 50px 10px 0 10px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(69, 69, 230);
+  font-weight: bold;
 }
-textarea{
-    max-width: 100%;
+textarea {
+  max-width: 100%;
 }
-input{
-    max-width: 100%;
+input {
+  max-width: 100%;
 }
-input::placeholder{
-    color: blueviolet;
-}
-
-textarea::placeholder{
-    color: blueviolet;
-}
-label::after{
-    content: "*"; color: red;    
+input::placeholder {
+  color: blueviolet;
 }
 
-.checkbox:checked{
-    outline: dotted blue;    
+textarea::placeholder {
+  color: blueviolet;
+}
+label::after {
+  content: "*";
+  color: red;
 }
 
-.checkbox::after{
-    content: none;
-}
-input:hover{
-    border: solid 2px darkblue;
+.checkbox:checked {
+  outline: dotted blue;
 }
 
-.sucursal{
+.checkbox::after {
+  content: none;
+}
+input:hover {
+  border: solid 2px darkblue;
+}
+
+.sucursal {
   color: black;
   text-align: center;
 }
-.fondo{
+.fondo {
   background: linear-gradient(45deg, #fff, #ccc, #fff, #ccc);
-  
 }
-.visitarnos{
+.visitarnos {
   margin-top: 100px;
   color: black;
-   font-size: 50px;
-    border: blue solid;
-    padding: 10px;
-    box-shadow: 0 0 40px cornflowerblue;
-     backdrop-filter: blur(6px);
-    background-color: transparent;
+  font-size: 50px;
+  border: blue solid;
+  padding: 10px;
+  box-shadow: 0 0 40px cornflowerblue;
+  backdrop-filter: blur(6px);
+  background-color: transparent;
 }
 .iframe-center {
-    display: block;
-    margin: 0 auto;
-    border: none;
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
 
-.nosotros-cuadro{
+.nosotros-cuadro {
   margin-top: 100px;
 }
